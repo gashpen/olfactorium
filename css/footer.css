@@ -1,0 +1,190 @@
+.footer_wrap {
+    padding: 30px 30px;
+    background-color: #000;
+    width: 100%;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+    .footer_wrap {
+      padding: 15px 0 ;
+    }
+}
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    .footer {
+        width: 640px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .footer {
+        width: 360px !important;
+        margin: 0 auto;
+        gap: 15px;
+    }
+}
+
+
+.footer_icon-wrap {
+    width: 50%;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    .footer_icon-wrap {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .footer_icon-wrap {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+.footer_contacts-wrap {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    .footer_contacts-wrap {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .footer_contacts-wrap {
+        width: 100%;
+    }
+}
+
+.footer_contacts {
+    line-height: 30px;
+}
+
+.footer_icon {
+    background-image: url(../src/img/OLFACTORIUM__1.png);
+    width: 250px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.icon_desr>span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+}
+
+.icon_desr {
+    width: 140px;
+}
+
+.footer_head {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+}
+
+.footer_copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    line-height: 30px;
+}
+
+.footer_phone>a {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.footer_email>a {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.footer_privacy_policy {
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.footer_create-by>a {
+    color: #fff;
+    font-size: 1.15rem;
+
+}
+
+.privacy_modal-wrap {
+    padding: 50px 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    overflow-y: scroll;
+}
+
+.privacy_modal {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 50px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+}
+
+.privacy_modal>h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.privacy_modal>p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.t-popup__close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: -50px;
+    top: -30px;
+}
+.hidden{
+    visibility: hidden;
+}

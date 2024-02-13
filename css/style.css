@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../src/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../src/font/Montserrat-Bold.ttf);
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.opacity-none {
+    opacity: 0;
+}
+
+.border_b {
+    border-bottom: 1px solid lightgray;
+}
+
+.sale::after {
+    content: 'SALE';
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    font-size: 0.75rem;
+}
+
+.new::after {
+    content: 'NEW';
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    font-size: 0.75rem;
+}
+
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .sale::after {
+        width: 32px;
+        height: 32px;
+        font-size: 0.5rem;
+    }
+
+    .new::after {
+        width: 32px;
+        height: 32px;
+        font-size: 0.5rem;
+    }
+}

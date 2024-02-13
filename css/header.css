@@ -1,0 +1,316 @@
+.header {
+    margin: 0 auto;
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header {
+        width: 640px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .header {
+        width: 360px;
+    }
+}
+
+.header_widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header_img {
+    width: 200px;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .header_img {
+        width: 160px;
+    }
+}
+
+.header_contact>a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.25rem;
+
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header_contact {
+        display: none;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .header_contact {
+        display: none;
+    }
+}
+
+.header_widget-search {
+    background-image: url(../src/img/search-md.svg);
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 0 5px;
+
+}
+
+.header_widget-cart {
+    background-image: url(../src/img/image1.svg);
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative;
+}
+.header_widget-cart::after{
+    content: '0';
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    position: absolute;
+    right: -5px;
+    width: 14px;
+    height: 16px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.header_search-filter {
+    padding: 5px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.header_search-links {
+    font-size: 0.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-x: auto;
+}
+
+.header_search-links.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.header_search-links::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .header_search-filter {
+        width: 360px;
+    }
+}
+
+.link_wrap {
+    text-align: center;
+    background-color: #fff;
+}
+
+.link {
+    font-size: 0.90rem;
+}
+
+/* Бургер меню */
+.header_burger>span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.header_burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 0 0 5px;
+}
+
+.menu-icon>span {
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+}
+
+.menu-icon>span:first-child {
+    top: 2px;
+}
+
+.menu-icon>span:last-child {
+    top: 12px;
+    width: 75%;
+    right: 0;
+}
+
+.modal_menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 12;
+}
+
+.nav_menu {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background-color: #000;
+    z-index: 15;
+    -webkit-transform: translateX(200vw);
+        -ms-transform: translateX(200vw);
+            transform: translateX(200vw);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 48px 30px 38px;
+}
+
+.nav_link-wrap {
+    margin-bottom: 20px;
+}
+
+.nav_link {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.nav_desc {
+    line-height: 1.55;
+    color: #fff;
+    font-size: 0.8125rem;
+}
+
+.nav_icon {
+    width: 120px;
+    height: 10px;
+    background-image: url(../src/img/OLFACTORIUM__1.png);
+    background-size: contain;
+    margin-bottom: 25px;
+}
+
+.close_icon {
+    position: absolute;
+    cursor: pointer;
+    right: 40px;
+    top: 40px;
+}
+
+.filter_output-wrap {
+    position: absolute;
+    top: 115px;
+    width: 100%;
+    background-color: #eeeeee
+}
+
+.filter_output {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tooltip {
+    display:inline-block;
+    text-align:left;
+}
+
+.tooltip .right {
+    width: 100%;
+    left:0;
+    padding:0;
+    background-color:#eeeeee;
+    font-weight:normal;
+    font-size:13px;
+    position:absolute;
+    z-index:99999999;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    visibility:hidden; 
+    opacity:0; 
+    -webkit-transition:opacity 0.8s; 
+    -o-transition:opacity 0.8s; 
+    transition:opacity 0.8s;
+}
+
+.tooltip:hover .right {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .text-content {
+    padding:20px 0px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+@media (min-width: 641px) and (max-width: 1199px) {
+    .tooltip .text-content {
+        width: 640px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .tooltip .text-content {
+        width: 360px;
+    }
+}
+.link_filtred-aroma:not(:last-of-type){
+    margin-right: 50px;
+}
+
+.link{
+    margin: 0 10px;
+    cursor: -webkit-grab;
+    cursor: grab;
+    
+}
+.link_filtred-aroma{
+    font-size: 0.875rem;
+}

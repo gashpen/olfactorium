@@ -1,0 +1,744 @@
+.main {
+    margin-top: 100px;
+    width: 100%;
+}
+
+
+/* Бутик ароматов */
+.main_aroma-change {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .main_aroma-change {
+        width: 640px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .main_aroma-change {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 360px;
+    }
+}
+
+
+.aroma_change-wrap {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_change-wrap {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_change-wrap {
+        width: 100%;
+    }
+}
+
+
+.aroma_change {
+    font-size: 3.75rem;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_change {
+        font-size: 3.125rem;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_change {
+        font-size: 2.5rem;
+    }
+}
+
+.aroma_descr>div {
+    font-size: 3.75rem;
+    text-align: right;
+    margin-right: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_descr>div {
+        font-size: 3.125rem;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_descr>div {
+        font-size: 2.5rem;
+        margin-right: 10px;
+    }
+}
+
+.aroma_descr {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_descr {
+        text-align: -webkit-center;
+    }
+}
+
+
+.aroma_descr-txt {
+    font-size: 1rem !important;
+    margin-right: 0 !important;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_descr-txt {
+        width: 40%;
+        text-align: left !important;
+    }
+}
+
+.aroma_change-btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+
+.line {
+    width: calc(100% - 250px);
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.aroma_change-btn {
+    color: #fff;
+    background-color: #000;
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    margin-left: 45px;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+.aroma_change-btn:hover{
+    background-color: #3e3e3e;
+}
+
+.aroma_change-about {
+    font-size: 1.125rem !important;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_change-about {
+        display: none;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_change-about {
+        margin: 30px 0;
+    }
+}
+
+.aroma_image-wrap {
+    width: 50%;
+    text-align: -webkit-right;
+    position: relative;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_image-wrap {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_image-wrap {
+        width: 100%;
+    }
+}
+
+.aroma_image {
+    background-image: url(../src/img/image_73_1.png);
+    background-color: #000;
+    width: 380px;
+    height: 540px;
+    background-size: 300%;
+    position: relative;
+    background-position-x: -481px;
+    background-repeat: no-repeat;
+}
+
+.aroma_image::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    background-color: #fff;
+    top: 125px;
+    left: -120px;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_image {
+        width: 100%;
+        background-position-y: 42px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: -711px;
+        background-size: 275%;
+
+    }
+
+    .aroma_image::before {
+        content: '';
+        display: block;
+        width: 145px;
+        height: 120px;
+        position: absolute;
+        background-color: #fff;
+        top: 542px;
+        left: 255px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_image {
+        width: 100%;
+        height: 380px;
+    }
+
+    .aroma_image::before {
+        content: '';
+        display: block;
+        width: 145px;
+        height: 120px;
+        position: absolute;
+        background-color: #fff;
+        top: 381px;
+        left: 110px;
+    }
+}
+
+/* Анимация */
+.circle_svg {
+    width: 50%;
+    position: absolute;
+    left: -95px;
+    top: 185px;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .circle_svg {
+        width: 30%;
+        position: absolute;
+        left: 230px;
+        top: 457px
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .circle_svg {
+        width: 50%;
+        position: absolute;
+        left: 88px;
+        top: 290px
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+.circle_svg-txt {
+    font-size: 30px;
+    mix-blend-mode: difference;
+    fill: white;
+    -webkit-transition: all 10s ease;
+    -o-transition: all 10s ease;
+    transition: all 10s ease;
+    -webkit-animation: rotate 40s linear infinite;
+            animation: rotate 40s linear infinite;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+}
+
+.circle_svg-textpath {
+    font-size: 1.5rem;
+}
+
+/* О КОМПАНИИ */
+
+.main_about-company {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 120px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .main_about-company {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 640px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .main_about-company {
+        width: 360px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+.about_desc-wrap {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .about_desc-wrap {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .about_desc-wrap {
+        width: 100%;
+    }
+}
+
+.section_header {
+    font-size: 3.75rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .section_header {
+        font-size: 3.125rem;
+
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .section_header {
+        font-size: 2.5rem;
+
+    }
+}
+
+.about_desc-txt-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.about_desc-img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .about_desc-img-wrap {
+        margin-bottom: 45px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .about_desc-img-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+}
+
+.about_desc-img {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    background-image: url(../src/img/woman-shopping-bouti.jpg);
+    width: 228px;
+    height: 140px;
+    background-size: cover;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .about_desc-img {
+        width: 360px;
+        height: 260px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.about_desc-txt {
+    line-height: 28px;
+    margin-left: 40px;
+    padding-right: 18px;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .about_desc-txt {
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .about_desc-txt {
+        padding-right: 15px;
+        font-size: 0.875rem;
+        margin-left: 0;
+        padding-right: 0;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.about_company-img {
+    position: relative;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    background-image: url(../src/img/woman-shopping-bouti.jpg);
+    width: 640px;
+    height: 440px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .about_company-img {
+        width: 360px;
+        height: 360px;
+    }
+}
+
+/* Анимация */
+
+.blur_circle {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    border-radius: 50%;
+    top: 170px;
+    left: -70px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .blur_circle {
+        top: 375px;
+        left: 252px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .blur_circle {
+        top: 295px;
+        left: 125px;
+    }
+}
+
+.blur_circle_svg {
+    width: 150%;
+    position: absolute;
+    top: 0;
+    top: -33px;
+    left: -33px;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .circle_svg {
+        width: 30%;
+        position: absolute;
+        left: 230px;
+        top: 457px
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .circle_svg {
+        width: 50%;
+        position: absolute;
+        left: 88px;
+        top: 290px
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+.blur_circle_svg-txt {
+    font-size: 30px;
+    fill: #000;
+    -webkit-transition: all 10s ease;
+    -o-transition: all 10s ease;
+    transition: all 10s ease;
+    -webkit-animation: rotate 40s linear infinite;
+            animation: rotate 40s linear infinite;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+}
+
+/* НОВИНКИ */
+.main_new-section-wrap {
+    padding-top: 120px;
+    background-color: rgb(247, 246, 246);
+}
+.main_new-section-wrap:nth-last-of-type(1){
+    padding-bottom: 100px;
+}
+
+.main_new-section {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .main_new-section {
+        width: 640px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .main_new-section {
+        width: 360px;
+    }
+}
+
+.new_product {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.product_card {
+    width: 25%;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .new_product {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .product_card {
+        width: 50%;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .new_product {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .product_card {
+        width: 50%;
+        margin-bottom: 100px;
+    }
+
+}
+
+.product_card-img {
+    margin-bottom: 15px;
+    position: relative;
+    width: 285px;
+    height: 345px;
+}
+
+.product_img-wrap {
+    position: relative;
+    width: 285px;
+    height: 345px;
+   
+}
+.product_card-img-change{
+    position: absolute;
+    width: 285px;
+    height: 345px;
+    inset: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+.product_card-img-change:hover{
+    opacity: 1;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+    .product_card-img-change {
+        width: 170px;
+        height: 210px;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .product_card-img {
+        width: 170px;
+        height: 210px;
+    }
+
+    .product_img-wrap {
+        width: 170px;
+        height: 210px;
+    }
+}
+
+.product_img-wrap::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-filter: invert(20%);
+            filter: invert(20%);
+    background-color: #fff;
+    z-index: 1;
+    right: 15px;
+    bottom: 30px;
+}
+
+.product_img-wrap::after {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    background-position: center;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../src/img/image1.svg);
+    z-index: 1;
+    right: 15px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.product_card-desc {
+    font-size: 1.375rem;
+    line-height: 22px;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+    .product_card-desc {
+       font-size: 1rem;
+       line-height: 18px;
+    }
+}

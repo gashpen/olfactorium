@@ -1,0 +1,118 @@
+.aroma_catalog-section {
+    padding: 200px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_catalog-section {
+        width: 640px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_catalog-section {
+        width: 330px;
+    }
+
+}
+
+.aroma_catalog-wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.aroma_catalog-header>div>h1{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_catalog-header>div>h1{
+        font-size: 1.5rem;
+    }
+
+}
+.aroma_catalog-header>div{
+    width: 150px;
+    position: fixed;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_catalog-header>div{
+        font-size: 0.875rem;
+    }
+
+}
+
+.aroma_catalog-letter {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3
+}
+
+.aroma_list {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 3 / 3;
+    margin-bottom: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.aroma_catalog-header{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-right: 20px;
+}
+.aroma_catalog-link{
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 35%;
+    margin-bottom: 15px;
+    display: block;
+}
+@media (min-width: 641px) and (max-width: 1199px) {
+    .aroma_catalog-link{
+       width: 100%;
+       
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .aroma_catalog-link{
+        width: 100%;
+        
+     }
+
+}
+
+.aroma_catalog-link:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
